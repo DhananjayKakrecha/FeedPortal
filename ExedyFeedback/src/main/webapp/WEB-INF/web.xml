@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd" id="WebApp_ID" version="3.1">
+  <display-name>ExedyFeedback</display-name>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+  </welcome-file-list>
+  
+  <servlet>
+		<servlet-name>ProductRegistrationServlet</servlet-name>
+		<servlet-class>com.product.ProductRegistrationServlet</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>ProductDisplayServlet</servlet-name>
+		<servlet-class>com.product.ProductDisplayServlet</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>LoginServlet</servlet-name>
+		<servlet-class>com.login.LoginServlet</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>ProductUpdateServlet</servlet-name>
+		<servlet-class>com.product.ProductUpdateServlet</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>ProductDeleteServlet</servlet-name>
+		<servlet-class>com.product.ProductDeleteServlet</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>RegisterUserServlet</servlet-name>
+		<servlet-class>com.register.RegisterUserServlet</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>AdminController</servlet-name>
+		<servlet-class>com.admin.AdminController</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>UserController</servlet-name>
+		<servlet-class>com.user.UserController</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>ProductRegistrationServlet</servlet-name>
+		<url-pattern>/register</url-pattern>
+	</servlet-mapping>
+
+	<servlet-mapping>
+		<servlet-name>ProductDisplayServlet</servlet-name>
+		<url-pattern>/display</url-pattern>
+	</servlet-mapping>
+	
+	<servlet-mapping>
+		<servlet-name>LoginServlet</servlet-name>
+		<url-pattern>/login</url-pattern>
+	</servlet-mapping>
+
+	<servlet-mapping>
+		<servlet-name>ProductUpdateServlet</servlet-name>
+		<url-pattern>/update</url-pattern>
+	</servlet-mapping>
+	
+	<servlet-mapping>
+		<servlet-name>ProductDeleteServlet</servlet-name>
+		<url-pattern>/deleteFeed</url-pattern>
+	</servlet-mapping>
+
+	<servlet-mapping>
+		<servlet-name>RegisterUserServlet</servlet-name>
+		<url-pattern>/uregister</url-pattern>
+	</servlet-mapping>
+	
+	<servlet-mapping>
+		<servlet-name>AdminController</servlet-name>
+		<url-pattern>/adminProduct</url-pattern>
+	</servlet-mapping>
+	
+	<servlet-mapping>
+		<servlet-name>UserController</servlet-name>
+		<url-pattern>/userControl</url-pattern>
+	</servlet-mapping>
+</web-app>
